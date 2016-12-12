@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Projeto lab02</title>
+        <script src="http://code.angularjs.org/1.0.1/angular-1.0.1.min.js"></script>
+		<script src="js/funcoes.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/components.css"/>
+		<style id="corpo">
+		body {background-color:blue;}
+		
+		</style>
+    </head>
+    <body >
+		<div align="center">	
+			<input id="cor" type="text">
+			<input type="button" onClick="MudarCor()" value="Mudar a cor de fundo">
+			
+			<h1 style="text-align:center">To do List</h1>
+			<input id="tarefa" type="text">
+			<input type="button" onClick="AdicionarTarefa()" value="Add">
+			<input type="button" onClick="LimparLista()" value="Limpar lista"/>
+			<br><br>
+			<progress style="  height: 40px; width:600px ;padding: 2px;" id="pg" max="100" value="100"></progress>
+			<h2 id="tarefas" style="text-align:center;color:white;">Total de tarefas a completar: <h2>
+			<h2 id="completos" style="text-align:center;color:white;">Completos: <h2>
+			<div id="lista"></div>
+			
+		</div>
+		
+			
+		
+    </body>
+</html>
